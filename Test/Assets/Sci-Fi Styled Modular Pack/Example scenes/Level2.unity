@@ -906,6 +906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 11400000, guid: fecbc6b1abbce524490f49b617111183, type: 2}
+  KeyImage: {fileID: 1401252966}
 --- !u!65 &56493005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1520,8 +1521,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 123212586}
   - {fileID: 1678979333726949876}
+  - {fileID: 123212586}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13653,6 +13654,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394413761}
   m_Mesh: {fileID: 4300000, guid: 932518e1472904244afe21e844fd83ab, type: 3}
+--- !u!1 &1401252966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3917633473210009526, guid: 4af12dc029fa1a24a9ac7615e10247e7, type: 3}
+  m_PrefabInstance: {fileID: 1678979333726949875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1418406299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21629,7 +21635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4510519828774828574, guid: 4af12dc029fa1a24a9ac7615e10247e7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4510519828774828574, guid: 4af12dc029fa1a24a9ac7615e10247e7, type: 3}
       propertyPath: m_AnchorMax.x
@@ -21735,7 +21741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9032320806528221931, guid: cd1141393b5e88d4d9d61db7c4275ba1, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9032320806528221931, guid: cd1141393b5e88d4d9d61db7c4275ba1, type: 3}
       propertyPath: m_AnchorMax.x

@@ -25,6 +25,7 @@ public class KeyManager : MonoBehaviour
     {
         haveKeys.Add(key);
         key.keyImage.SetActive(true);
+        //Instantiate(key.keyImage);
     }
 
 }
