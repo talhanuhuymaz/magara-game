@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35886d01118a29848a7469aa2abb4df9, type: 3}
-  m_Name: Key1
+  m_Name: Key2
   m_EditorClassIdentifier: 
   connectedDoors: []
-  keyImage: {fileID: 9032320806528221928, guid: cd1141393b5e88d4d9d61db7c4275ba1, type: 3}
+  keyImage: {fileID: 3917633473210009526, guid: 4af12dc029fa1a24a9ac7615e10247e7, type: 3}

@@ -17,4 +17,14 @@ public class KeyManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Adds key to do have keys list
+    /// </summary>
+    /// <param name="key"></param>
+    public void AddKey(Key key)
+    {
+        haveKeys.Add(key);
+        key.keyImage.SetActive(true);
+    }
+
 }

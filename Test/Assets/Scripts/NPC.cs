@@ -12,7 +12,7 @@ public class NPC : MonoBehaviour
     {
         //Play Talking Sound
         //giving the key
-        KeyManager.instance.haveKeys.Add(thisKeyWillBeGiven);
+        KeyManager.instance.AddKey(thisKeyWillBeGiven);
         ThingsToDo.Invoke();
     }
 }
