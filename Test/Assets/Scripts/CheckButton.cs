@@ -6,11 +6,15 @@ using UnityEngine.InputSystem;
 
 public class CheckButton : MonoBehaviour
 {
+    public Transform holdPoint;
     public float range;
     public LayerMask buttonLayer;
-    public GameObject[] buttons; 
+    public GameObject[] buttons;
+    public GameObject[] cubes;
 
     public MyInputs controlls;
+
+    private GameObject currentCube;
 
     private void Awake()
     {
@@ -20,7 +24,18 @@ public class CheckButton : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Pressed");
+        // Droping the cube
+        if (currentCube != null)
+        {
+            Rigidbody cubeRb = currentCube.GetComponent<Rigidbody>();
+            cubeRb.isKinematic = false;
+            currentCube.transform.SetParent(null);
+            currentCube = null;
+            return;
+
+        }
+
+        // Checking for buttons
         if (Physics.CheckSphere(transform.position, range, buttonLayer))
         {
             Debug.Log("Found");
@@ -34,6 +49,24 @@ public class CheckButton : MonoBehaviour
                 }
             }
         }
+        // Cheking for cubes
+        if (Physics.CheckSphere(transform.position, range, buttonLayer))
+        {
+            for (int i = 0; i < cubes.Length; i++)
+            {
+                if (Vector3.Distance(transform.position, cubes[i].transform.position) <= range)
+                {
+                    currentCube = cubes[i];
+                    Rigidbody cubeRb = currentCube.GetComponent<Rigidbody>();
+                    cubeRb.isKinematic = true; // making the rb kinematic so it wont fall
+                    currentCube.transform.position = holdPoint.position;
+                    currentCube.transform.SetParent(holdPoint);
+                    
+                }
+            }
+
+        }
+
     }
 
     private void OnEnable()
