@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4965270263476978590}
   - component: {fileID: 4965270263478305726}
   - component: {fileID: 4965270263479271806}
-  - component: {fileID: 3678541153713193451}
+  - component: {fileID: 8018317197782370975}
   m_Layer: 0
   m_Name: PT_Medieval_Village_Fence_01
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3678541153713193451
+--- !u!65 &8018317197782370975
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,5 +93,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.2002318, y: 1.1585844, z: 0.24500176}
-  m_Center: {x: 0.00000017881399, y: 0.47181678, z: 0.028418818}
+  m_Size: {x: 2.200231, y: 1.1585844, z: 0.24500167}
+  m_Center: {x: 0.00000017881393, y: 0.47181678, z: 0.028414994}
